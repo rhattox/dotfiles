@@ -15,6 +15,15 @@ opt.showmode = false
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
+opt.wrap = true
+opt.swapfile = false
+opt.backup = false
+opt.hlsearch = false
+opt.incsearch = true
+opt.scrolloff = 8
+opt.isfname:append('@-@')
+opt.colorcolumn = "80"
+
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2
@@ -31,6 +40,7 @@ opt.mouse = "a"
 opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
+opt.relativenumber = true
 
 -- disable nvim intro
 opt.shortmess:append "sI"

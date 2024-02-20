@@ -5,8 +5,8 @@ local M = {}
 M.general = {
   i = {
     -- go to  beginning and end
-    ["<S-a>"] = { "<ESC>^i", "Beginning of line" },
-    ["<S-e>"] = { "<End>", "End of line" },
+--    ["<S-a>"] = { "<ESC>^i", "Beginning of line" },
+--    ["<S-e>"] = { "<End>", "End of line" },
 
     -- navigate within insert mode
     -- ["<C-h>"] = { "<Left>", "Move left" },

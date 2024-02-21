@@ -24,7 +24,11 @@ M.theprimeogen = {
     ["H"] = {"0"},
     ["J"] = {"<S-Up>zz"},
     ["K"] = {"<S-Down>zz"},
-    ["L"] = {"$"}
+    ["L"] = {"$"},
+    ["<leader>NT"] = {":tabnew <CR>"},
+    ["<leader>CT"] = {":tabclose <CR>"},
+    ["<leader>TN"] = {":tabnext <CR>"},
+    ["<leader>TP"] = {":tabprevious <CR>"}
   },
 }
 

@@ -12,13 +12,19 @@ local M = {}
 M.theprimeogen = {
   v = {
     ["J"] = {":m '>+1<CR>gv=gv", "MoveLineUp"},
-    ["K"] = {":m '<-2<CR>gv=gv", "MoveLineDown"}
+    ["K"] = {":m '<-2<CR>gv=gv", "MoveLineDown"},
+    ["H"] = {"0"},
+    ["L"] = {"$"}
   },
   n = {
     ["<S-Up>"] = {"<S-Up>zz"},
     ["<S-Down>"] = {"<S-Down>zz"},
     ["n"] = {"nzzzv"},
-    ["N"] = {"Nzzzv"}
+    ["N"] = {"Nzzzv"},
+    ["H"] = {"0"},
+    ["J"] = {"<S-Up>zz"},
+    ["K"] = {"<S-Down>zz"},
+    ["L"] = {"$"}
   },
 }
 

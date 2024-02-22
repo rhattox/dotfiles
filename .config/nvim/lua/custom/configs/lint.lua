@@ -1,10 +1,11 @@
 require('lint').linters_by_ft = {
-  javascript = {'eslist'},
-  typescript = {'eslist'}
+  javascript = {'oxlint'},
+  typescript = {'oxlint'},
+  lua = {'selene'}
 }
 
-vim.api.nvim_create_autocmd({"BufWritePost"}, {
-  callback = function ()
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  callback = function()
     require("lint").try_lint()
-  end
+  end,
 })

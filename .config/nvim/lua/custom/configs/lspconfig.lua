@@ -4,7 +4,17 @@ local capabilities = config.capabilities
 
 local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+lspconfig.lua_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.tsserver.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.docker_compose_langserver.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})

@@ -14,7 +14,7 @@ lspconfig.tsserver.setup({
 	capabilities = capabilities,
 })
 
-lspconfig.docker_compose_langserver.setup({
+lspconfig.java_language_server.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })

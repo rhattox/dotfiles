@@ -133,7 +133,12 @@ local default_plugins = {
       vim.g.mason_binaries_list = opts.ensure_installed
     end,
   },
-
+  {
+    "williamboman/mason-lspconfig.nvim",
+    config = function ()
+      require("mason-lspconfig").setup()
+    end,
+  },
   {
     "neovim/nvim-lspconfig",
     event = "User FilePost",

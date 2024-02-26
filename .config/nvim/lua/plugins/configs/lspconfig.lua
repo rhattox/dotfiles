@@ -61,4 +61,19 @@ require("lspconfig").lua_ls.setup {
   },
 }
 
+require("lspconfig").bashls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").docker_compose_language_service.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").docker_compose_language_service.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
 return M

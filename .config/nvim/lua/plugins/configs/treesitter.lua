@@ -3,7 +3,6 @@ local options = {
 		-- defaults
 		"vim",
 		"lua",
-
 		-- web dev
 		"html",
 		"css",

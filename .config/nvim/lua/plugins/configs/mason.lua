@@ -2,31 +2,29 @@ local options = {
   -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
   ensure_installed = {
     -- LSPs
-    "lua-language-server", --lua_ls
-    "bash-language-server", --bashls
+    "lua-language-server", -- lua_ls
+    "bash-language-server", -- bashls
     "docker-compose-language-service",
     "dockerfile-language-server",
-    "hydra-lsp",
+    "hydra-lsp", -- hydra_lsp
     "prettier",
-    "rust-analyzer",
-    "synk",
+    "rust-analyzer", -- rust_analyzer
+    "snyk",
     "sonarlint-language-server",
     "trivy",
     "ast-grep",
-    "jedi-language-server",
-    "jdtls",
-    "jq-lsp",
+    "jedi-language-server", -- jedi_language_server
+    "jdtls", -- jdtls
+    "jq-lsp", -- jqls
     "groovy-language-server",
-    "haskell-language-server",
-    "helm-ls",
-    "json-lsp",
+    "helm-ls", -- helm_ls
+    "json-lsp", -- jsonls
     "kotlin-language-server",
     "lemminx",
     "awk-language-server",
     "clangd",
-    "cystalline",
+    "crystalline", -- crystalline
     "deno",
-    "eslint-ls",
     "gopls",
     "nginx-language-server",
     "powershell-editor-services",
@@ -41,7 +39,6 @@ local options = {
     -- Linters
     "shellcheck",
     "hadolint",
-    "action-lint",
     "ansible-lint",
     "alex",
     "biome",
@@ -50,13 +47,11 @@ local options = {
     "detekt",
     "djlint",
     "flake8",
-    "golanci-lint",
+    "golangci-lint",
     "ast-grep",
     "jsonlint",
     "ktlint",
-    "luacheck",
     "rubocop",
-    "shellharden",
     "textlint",
     "tflint",
     "tfsec",
@@ -66,7 +61,6 @@ local options = {
     "yamlfix",
     "yamlfmt",
     "xmlformatter",
-    "tlint",
     "stylua",
     "sqlfmt",
     "shfmt",

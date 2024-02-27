@@ -71,9 +71,58 @@ require("lspconfig").docker_compose_language_service.setup{
   capabilities = M.capabilities,
 }
 
-require("lspconfig").docker_compose_language_service.setup{
+require("lspconfig").dockerls.setup{
   on_attach = M.on_attach,
   capabilities = M.capabilities,
 }
+
+require("lspconfig").rust_analyzer.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").hydra_lsp.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").jedi_language_server.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").jdtls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").jqls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").helm_ls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").jsonls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").crystalline.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+
+
+
+
+
+
+
+
 
 return M

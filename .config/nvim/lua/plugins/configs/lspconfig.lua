@@ -76,12 +76,22 @@ require("lspconfig").dockerls.setup{
   capabilities = M.capabilities,
 }
 
+require("lspconfig").hydra_lsp.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
 require("lspconfig").rust_analyzer.setup{
   on_attach = M.on_attach,
   capabilities = M.capabilities,
 }
 
-require("lspconfig").hydra_lsp.setup{
+-- require("lspconfig").snyk_ls.setup{
+--   on_attach = M.on_attach,
+--   capabilities = M.capabilities,
+-- }
+
+require("lspconfig").ast_grep.setup{
   on_attach = M.on_attach,
   capabilities = M.capabilities,
 }
@@ -116,12 +126,50 @@ require("lspconfig").crystalline.setup{
   capabilities = M.capabilities,
 }
 
+require("lspconfig").vimls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").tflint.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").clangd.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").denols.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").gopls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").sqlls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
+require("lspconfig").nginx_language_server.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").ruby_ls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+require("lspconfig").kotlin_language_server.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
 
 

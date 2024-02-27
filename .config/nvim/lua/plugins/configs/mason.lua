@@ -4,75 +4,34 @@ local options = {
     -- LSPs
     "lua-language-server", -- lua_ls
     "bash-language-server", -- bashls
-    "docker-compose-language-service",
-    "dockerfile-language-server",
+    "docker-compose-language-service", -- docker_compose_language_service
+    "dockerfile-language-server", -- dockerls
     "hydra-lsp", -- hydra_lsp
-    "prettier",
     "rust-analyzer", -- rust_analyzer
-    "snyk",
-    "sonarlint-language-server",
-    "trivy",
-    "ast-grep",
+    "snyk", -- snyk_ls
+    "ast-grep", -- ast_grep
     "jedi-language-server", -- jedi_language_server
     "jdtls", -- jdtls
     "jq-lsp", -- jqls
-    "groovy-language-server",
+    "groovy-language-server", -- groovyls
     "helm-ls", -- helm_ls
     "json-lsp", -- jsonls
-    "kotlin-language-server",
-    "lemminx",
-    "awk-language-server",
-    "clangd",
+    "kotlin-language-server", -- kotlin_language_server
+    "lemminx", -- lemminx
+    "awk-language-server", -- awk_ls
+    "clangd",  -- clangd
     "crystalline", -- crystalline
-    "deno",
-    "gopls",
-    "nginx-language-server",
-    "powershell-editor-services",
-    "puppet-editor-services",
-    "ruby-lsp",
-    "sqlls",
-    "taplo",
-    "terraform-ls",
-    "tflint",
-    "vim-language-server",
-    "bash-debug-adapter",
-    -- Linters
-    "shellcheck",
-    "hadolint",
-    "ansible-lint",
-    "alex",
-    "biome",
-    "cfn-lint",
-    "cpplint",
-    "detekt",
-    "djlint",
-    "flake8",
-    "golangci-lint",
-    "ast-grep",
-    "jsonlint",
-    "ktlint",
-    "rubocop",
-    "textlint",
-    "tflint",
-    "tfsec",
-    "vint",
-    "yamllint",
-    -- Formatters
-    "yamlfix",
-    "yamlfmt",
-    "xmlformatter",
-    "stylua",
-    "sqlfmt",
-    "shfmt",
-    "rustywind",
-    "prettierd",
-    "ktlint",
-    "jq",
-    "google-java-format",
-    "gci",
-    "djlint",
-    "clang-format",
-    "ast-grep",
+    "deno", -- denols
+    "gopls", -- gopls
+    "nginx-language-server", -- nginx_language_server
+    "powershell-editor-services", -- powershell_es
+    "puppet-editor-services", -- puppet
+    "ruby-lsp", -- ruby_ls
+    "sqlls", -- sqlls
+    "taplo", -- taplo
+    "terraform-ls", -- terraformls
+    "tflint", -- tflint
+    "vim-language-server", -- vimls
   }, -- not an option from mason.nvim
 
  -- PATH = "skip",

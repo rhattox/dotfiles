@@ -14,7 +14,6 @@ opt.showmode = false
 
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
-
 opt.wrap = true
 opt.swapfile = false
 opt.backup = false

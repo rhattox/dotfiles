@@ -139,6 +139,10 @@ require("lspconfig").tflint.setup{
 require("lspconfig").clangd.setup{
   on_attach = M.on_attach,
   capabilities = M.capabilities,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
 }
 
 require("lspconfig").denols.setup{

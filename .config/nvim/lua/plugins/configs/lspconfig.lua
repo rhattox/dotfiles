@@ -175,6 +175,12 @@ require("lspconfig").kotlin_language_server.setup{
   capabilities = M.capabilities,
 }
 
+require("lspconfig").terraformls.setup{
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
+
 
 
 return M

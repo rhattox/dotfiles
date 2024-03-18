@@ -15,6 +15,9 @@ local options = {
 		-- low level
 		"c",
 		"zig",
+    "terraform",
+    "hcl",
+    "python"
 	},
 
 	highlight = {

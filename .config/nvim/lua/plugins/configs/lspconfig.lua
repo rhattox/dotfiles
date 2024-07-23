@@ -165,7 +165,7 @@ require("lspconfig").nginx_language_server.setup{
   capabilities = M.capabilities,
 }
 
-require("lspconfig").ruby_ls.setup{
+require("lspconfig").ruby_lsp.setup{
   on_attach = M.on_attach,
   capabilities = M.capabilities,
 }

@@ -125,3 +125,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+#
+# ASDF
+#
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"

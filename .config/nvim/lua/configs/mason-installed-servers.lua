@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
 		"helm_ls",
 		"yamlls",
     "java_language_server",
-    "ansiblels"
+    "ansiblels",
 		-- formatters
 	},
 	automatic_installation = true,

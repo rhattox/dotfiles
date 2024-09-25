@@ -5,7 +5,7 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"helm_ls",
 		"yamlls",
-    "java_language_server",
+    "jdtls",
     "ansiblels"
 		-- formatters
 	},

@@ -1,11 +1,13 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = {
-		"lua_ls",
-		"helm_ls",
-		"yamlls",
+  ensure_installed = {
+    "lua_ls",
+    "helm_ls",
+    "yamlls",
     "jdtls",
     "ansiblels",
-	},
-	automatic_installation = true,
+    "dockerls",
+    "docker_compose_language_service"
+  },
+  automatic_installation = true,
 })

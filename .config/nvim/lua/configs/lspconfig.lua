@@ -7,7 +7,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require("lspconfig")
 
 -- EXAMPLE
-local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls" }
+local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls", "dockerls", "docker_compose_language_service" }
 local nvlsp = require("nvchad.configs.lspconfig")
 
 -- lsps with default config
@@ -20,9 +20,9 @@ for _, lsp in ipairs(servers) do
 end
 
 
-lspconfig.jdtls.setup{
-    cmd = {'jdtls'},
-    root_dir = lspconfig.util.root_pattern('pom.xml'),
+lspconfig.jdtls.setup {
+  cmd = { 'jdtls' },
+  root_dir = lspconfig.util.root_pattern('pom.xml'),
 }
 
 lspconfig.helm_ls.setup({

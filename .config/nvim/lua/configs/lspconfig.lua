@@ -7,7 +7,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require("lspconfig")
 
 -- EXAMPLE
-local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls", "dockerls", "docker_compose_language_service" }
+local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls", "dockerls", "docker_compose_language_service", "ansiblels", "bashls", "groovyls", "sqlls" }
 local nvlsp = require("nvchad.configs.lspconfig")
 
 -- lsps with default config
@@ -25,6 +25,27 @@ lspconfig.jdtls.setup {
   root_dir = lspconfig.util.root_pattern('pom.xml'),
 }
 
+lspconfig.docker_compose_language_service.setup({
+  cmd = { 'docker-compose-langserver', '--stdio' },
+  filetypes = { 'yaml' },
+  root_dir = lspconfig.util.root_pattern('docker-compose.yaml', 'docker-compose.yml', 'compose.yaml', 'compose.yml'),
+  single_file_support = true,
+})
+
+lspconfig.yamlls.setup({
+  on_attach = function (client, bufnr)
+    client.stop()
+  end,
+  cmd = { 'yaml-language-server', '--stdio' },
+  filetypes = { },
+  root_dir = lspconfig.util.find_git_ancestor,
+  single_file_support = true,
+  settings = {
+    -- https://github.com/redhat-developer/vscode-redhat-telemetry#how-to-disable-telemetry-reporting
+    redhat = { telemetry = { enabled = false } },
+  },
+})
+
 lspconfig.helm_ls.setup({
   settings = {
     ["helm-ls"] = {
@@ -33,6 +54,7 @@ lspconfig.helm_ls.setup({
       },
     },
   },
+  root_dir = lspconfig.util.root_pattern("Chart.yaml", "templates")
 })
 
 lspconfig.ansiblels.setup({
@@ -57,7 +79,7 @@ lspconfig.ansiblels.setup({
       },
     },
   },
-  filetypes = { "yaml", "yml", "ansible" },
+  filetypes = { "ansible" },
   root_dir = lspconfig.util.root_pattern("roles", "playbooks"),
   single_file_support = true,
 

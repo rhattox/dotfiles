@@ -41,6 +41,15 @@ end)
 require("configs.mason-installed-servers")
 require("configs.lspconfig")
 
+
+vim.diagnostic.config({
+  severity_sort = true,
+  virtual_text = false, -- Turn off virtual text for diagnostics
+  signs = true, -- Turn off signs for diagnostics
+  underline = false, -- Turn off underlines for diagnostics
+  update_in_insert = true,
+})
+
 vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
   group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
   callback = function ()

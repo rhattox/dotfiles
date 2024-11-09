@@ -7,7 +7,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require("lspconfig")
 
 -- EXAMPLE
-local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls", "dockerls", "docker_compose_language_service", "ansiblels", "bashls", "groovyls", "sqlls" }
+local servers = { "html", "cssls", "lua_ls", "yamlls", "jdtls", "dockerls", "ansiblels", "bashls", "groovyls", "sqlls" }
 local nvlsp = require("nvchad.configs.lspconfig")
 
 -- lsps with default config
@@ -24,13 +24,6 @@ lspconfig.jdtls.setup {
   cmd = { 'jdtls' },
   root_dir = lspconfig.util.root_pattern('pom.xml'),
 }
-
-lspconfig.docker_compose_language_service.setup({
-  cmd = { 'docker-compose-langserver', '--stdio' },
-  filetypes = { 'yaml' },
-  root_dir = lspconfig.util.root_pattern('docker-compose.yaml', 'docker-compose.yml', 'compose.yaml', 'compose.yml'),
-  single_file_support = true,
-})
 
 lspconfig.yamlls.setup({
   on_attach = function (client, bufnr)
@@ -79,7 +72,7 @@ lspconfig.ansiblels.setup({
       },
     },
   },
-  filetypes = { "ansible" },
+  filetypes = { "ansible", "yaml", "yml" },
   root_dir = lspconfig.util.root_pattern("roles", "playbooks"),
   single_file_support = true,
 

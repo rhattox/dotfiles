@@ -38,3 +38,4 @@ end)
 
 require("configs.mason-installed-servers")
 require("configs.lspconfig")
+

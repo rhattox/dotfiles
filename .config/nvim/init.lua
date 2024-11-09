@@ -1,4 +1,7 @@
 vim.g.base46_cache = vim.fn.stdpath("data") .. "/nvchad/base46/"
+
+
+-- Set textwidth to 80 for text files
 vim.g.mapleader = " "
 
 -- bootstrap lazy and all plugins
@@ -35,7 +38,12 @@ require("chadrc")
 vim.schedule(function()
 	require("nvchad.mappings")
 end)
-
 require("configs.mason-installed-servers")
 require("configs.lspconfig")
 
+vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+  group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+  callback = function ()
+    vim.diagnostic.open_float(nil, {focus=false})
+  end
+})

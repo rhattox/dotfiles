@@ -40,6 +40,9 @@ o.splitright = true
 o.timeoutlen = 400
 o.undofile = true
 
+vim.opt.wrap = true
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "200"
 -- interval for writing swap file to disk, also used by gitsigns
 o.updatetime = 250
 

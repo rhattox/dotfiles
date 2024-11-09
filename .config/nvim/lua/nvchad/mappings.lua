@@ -1,5 +1,5 @@
 local map = vim.keymap.set
-
+map('n', '.', '<Nop>', { noremap = true })
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })

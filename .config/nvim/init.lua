@@ -40,7 +40,7 @@ vim.schedule(function()
 end)
 require("configs.mason-installed-servers")
 require("configs.lspconfig")
-
+require("nvim-surround").setup()
 
 vim.diagnostic.config({
   severity_sort = true,

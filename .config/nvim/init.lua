@@ -16,3 +16,9 @@ require("core.map-nvim-tree")
 
 --------------------- Bar Bar Maps ---------------------
 require("core.map-barbar")
+
+--------------------- ToggleTerm Maps ---------------------
+require("core.map-toggle-terminal")
+
+--------------------- LSP Maps ---------------------
+require("core.map-lsp")

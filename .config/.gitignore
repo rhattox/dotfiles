@@ -1,0 +1,2 @@
+# Ensure the contents of nvim/ are tracked
+!nvim/**

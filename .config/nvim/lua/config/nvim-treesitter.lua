@@ -1,4 +1,6 @@
-local options = {
+local M = {}
+
+M.opts = {
   ensure_installed = {
     "lua",
     "luadoc",
@@ -28,4 +30,4 @@ local options = {
   indent = { enable = true },
 }
 
-return options
+return M

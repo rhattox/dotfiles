@@ -1,7 +1,5 @@
 local M = {}
 
-
-
 M.opts = {
   disable_netrw = true,
   hijack_cursor = true,

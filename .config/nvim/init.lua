@@ -6,6 +6,7 @@ require("lazy.main")
 require("lazy.setup")
 --------------------- Lsp Call -----------------------
 require("lsp.main")
+require("lsp.lua")
 --------------------- Mason Configs -----------------------
 require("mason").setup()
 -- Loads configurations from Mason LSP

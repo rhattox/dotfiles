@@ -20,5 +20,8 @@ require("core.map-barbar")
 --------------------- ToggleTerm Maps ---------------------
 require("core.map-toggle-terminal")
 
+--------------------- ToggleTerm Maps ---------------------
+require("core.map-telescope")
+
 --------------------- LSP Maps ---------------------
 require("core.map-lsp")

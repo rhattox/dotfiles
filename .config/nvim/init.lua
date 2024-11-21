@@ -1,10 +1,9 @@
---------------------- Lazy -----------------------
-require("lazy.main")
-require("lazy.setup")
-
 --------------------- Core -----------------------
 require("core.options")
 require("core.mappings")
+--------------------- Lazy -----------------------
+require("lazy.main")
+require("lazy.setup")
 
 --------------------- Mason Configs -----------------------
 require("mason").setup()

@@ -5,8 +5,8 @@ require("core.mappings")
 require("lazy.main")
 require("lazy.setup")
 --------------------- Lsp Call -----------------------
-require("lsp.main")
-require("lsp.lua")
+-- require("lsp.main")
+require("cmp.main")
 --------------------- Mason Configs -----------------------
 require("mason").setup()
 -- Loads configurations from Mason LSP
@@ -24,6 +24,3 @@ require("core.map-toggle-terminal")
 
 --------------------- Telescope Maps ---------------------
 require("core.map-telescope")
-
---------------------- LSP Maps ---------------------
-require("core.map-lsp")

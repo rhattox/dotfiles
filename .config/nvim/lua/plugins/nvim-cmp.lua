@@ -1,13 +1,6 @@
 return {
   {
     'hrsh7th/nvim-cmp', -- Autocompletion plugin
-    opts = function()
-      return require("config.nvim-cmp").opts
-    end,
-    config = function(_, opts)
-      require("cmp").setup(opts)
-    end
-
   },
   {
     'hrsh7th/cmp-buffer', -- Buffer completion source

@@ -5,8 +5,10 @@ require("core.mappings")
 require("lazy.main")
 require("lazy.setup")
 --------------------- Lsp Call -----------------------
--- require("lsp.main")
 require("cmp.main")
+require("lsp.lua")
+require("lsp.java")
+require("lsp.yaml")
 --------------------- Mason Configs -----------------------
 require("mason").setup()
 -- Loads configurations from Mason LSP

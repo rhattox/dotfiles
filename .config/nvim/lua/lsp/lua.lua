@@ -1,18 +1,5 @@
-require("mason").setup()
-require("mason-lspconfig").setup()
-
-local extraLspConfig = require("core.map-lsp")
-
-require("lspconfig").lua_ls.setup({
-  on_attach = extraLspConfig.on_attach,
-  capabilities = extraLspConfig.capabilities,
-  on_init = extraLspConfig.on_init,
-
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" },
-      },
-    },
-  },
-})
+-- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+require('lspconfig')['lua_ls'].setup {
+  capabilities = capabilities
+}

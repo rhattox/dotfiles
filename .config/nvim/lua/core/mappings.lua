@@ -23,7 +23,7 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "General Clear highlights" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "General Save file" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General Copy whole file" })
 
-map("n", "<leader><BS>", "<cmd>%d<CR>", { desc = "Delete the whole file" })
+map("n", "<leader><Del>", "<cmd>%d<CR>", { desc = "Delete the whole file" })
 
 -- Comment
 map("n", "<leader>/", "gcc", { desc = "Toggle Comment", remap = true })

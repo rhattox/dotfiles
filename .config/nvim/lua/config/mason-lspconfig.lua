@@ -10,7 +10,6 @@ M.opts = {
     "clangd",
     "bashls",
     "sqlls",
-    "groovyls",
     "helm_ls",
     "yamlls",
     "jdtls",

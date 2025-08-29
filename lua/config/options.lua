@@ -17,11 +17,15 @@ vim.opt.breakindent = true -- enable line breaking indentation
 
 -- General Behaviors
 vim.opt.backup = false -- disable backup file creation
-vim.opt.clipboard = "unnamedplus" -- enable system clipboard access
+vim.opt.clipboard = "unnamed,unnamedplus" -- enable system clipboard access
 vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
 vim.opt.fileencoding = "utf-8" -- set file encoding to UTF-8
 vim.opt.mouse = "a" -- enable mouse support
 -- vim.opt.showmode = false -- hide mode display
+vim.g.loaded_node_provider = 0 -- disable node provider
+vim.g.loaded_perl_provider = 0 -- disable perl provider
+vim.g.loaded_python3_provider = 0 -- disable python3 provider
+vim.g.loaded_ruby_provider = 0 -- disable ruby provider
 vim.opt.splitbelow = true -- force horizontal splits below current window
 vim.opt.splitright = true -- force vertical splits right of current window
 vim.opt.termguicolors = true -- enable term GUI colors

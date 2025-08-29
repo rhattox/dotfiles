@@ -1,25 +1,22 @@
--- disable netrw at the very start of your init.lua
+-- Disable netrw at the very start of your init.lua to avoid conflicts with nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- optionally enable 24-bit colour
+-- Optionally enable 24-bit colour in the terminal
 vim.opt.termguicolors = true
 
--- empty setup using defaults
--- require("nvim-tree").setup()
-
--- OR setup with some options
+-- nvim-tree setup with custom options
 require("nvim-tree").setup({
     sort = {
-        sorter = "case_sensitive"
+        sorter = "case_sensitive" -- Sort files and folders case-sensitively
     },
     view = {
-        width = 30
+        width = 30 -- Set the width of the nvim-tree window
     },
     renderer = {
-        group_empty = true
+        group_empty = true -- Group empty folders together
     },
     filters = {
-        dotfiles = true
+        dotfiles = true -- Hide dotfiles by default
     }
 })

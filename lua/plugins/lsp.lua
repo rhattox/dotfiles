@@ -5,10 +5,7 @@ return {{
     config = function(_, opts)
         -- Setup mason first
         require("mason").setup()
-        require("mason-lspconfig").setup({
-            ensure_installed = {"bashls"}
-        })
-
+        
         -- Capabilities for nvim-cmp
         local cmp_nvim_lsp = require('cmp_nvim_lsp')
         local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -18,7 +15,8 @@ return {{
 
         -- Setup Bash LSP
         lspconfig.bashls.setup({
-            capabilities = capabilities
+            capabilities = capabilities,
+            on_exit = function() print("bashls exited") end,
             -- ...other bashls settings...
         })
     end

@@ -40,7 +40,7 @@ return {{
             -- "jsdoc",
             -- "json",
             -- "json5",
-            "lua" -- "luadoc",
+            "lua", -- "luadoc",
             -- -- "lua_patterns",
             -- "markdown",
             -- "markdown_inline",
@@ -58,8 +58,8 @@ return {{
             -- "vim",
             -- "vimdoc",
             -- "xml",
-            -- "yaml"
-            },
+            "helm",
+            "yaml"},
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
             sync_install = true,

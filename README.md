@@ -17,3 +17,10 @@ asdf install nodejs 24.6.0
 
 asdf set -u nodejs 24.6.0
 ```
+
+
+### Nvim Debug Functions
+
+`:echo &filetype` -- get the file type - useful for lsp attach debug
+
+`:messages` -- Show all messages from erros warning etc

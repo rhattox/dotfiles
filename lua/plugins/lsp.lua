@@ -20,22 +20,25 @@ return {{
         })
         -- Setup Helm LSP
         lspconfig.helm_ls.setup({
-            capabilities = capabilities,
-            cmd = {mason_path, "serve"},
-            filetypes = {"yaml", "smarty"},
-            root_dir = lspconfig.util.root_pattern("Chart.yaml", ".git")
+            settings = {
+                ['helm-ls'] = {
+                    yamlls = {
+                        path = "yaml-language-server"
+                    }
+                }
+            }
         })
 
-        lspconfig.yamlls.setup {
-            on_attach = function(client, bufnr)
-                if vim.bo[bufnr].filetype == "helm" then
-                    vim.schedule(function()
-                        vim.cmd("LspStop ++force yamlls")
-                    end)
-                end
-                -- other on_attach logic
-            end
-            -- other yamlls configurations
-        }
+        -- lspconfig.yamlls.setup {
+        --     on_attach = function(client, bufnr)
+        --         if vim.bo[bufnr].filetype == "helm" then
+        --             vim.schedule(function()
+        --                 vim.cmd("LspStop ++force yamlls")
+        --             end)
+        --         end
+        --         -- other on_attach logic
+        --     end
+        --     -- other yamlls configurations
+        -- }
     end
 }}

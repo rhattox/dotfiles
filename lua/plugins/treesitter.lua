@@ -24,7 +24,7 @@ return {{
             -- "goctl",
             -- "gomod",
             -- "gosum",
-            -- "gotmpl",
+            "gotmpl",
             -- "gowork",
             -- "gpg",
             -- "groovy",

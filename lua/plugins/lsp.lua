@@ -2,10 +2,9 @@
 -- LSP configuration for Neovim using nvim-lspconfig and mason
 return {{
     "neovim/nvim-lspconfig",
-    dependencies = {
-        "williamboman/mason.nvim",           -- LSP/DAP/server installer
-        "williamboman/mason-lspconfig.nvim", -- Mason integration with lspconfig
-        "hrsh7th/cmp-nvim-lsp"               -- nvim-cmp LSP completion capabilities
+    dependencies = {"williamboman/mason.nvim", -- LSP/DAP/server installer
+    "williamboman/mason-lspconfig.nvim", -- Mason integration with lspconfig
+    "hrsh7th/cmp-nvim-lsp" -- nvim-cmp LSP completion capabilities
     },
     config = function(_, opts)
         -- Setup mason first (for managing LSP servers)
@@ -30,6 +29,22 @@ return {{
                 ['helm-ls'] = {
                     yamlls = {
                         path = "yaml-language-server" -- Specify YAML language server path for Helm LS
+                    }
+                }
+            }
+        })
+        local util = require('lspconfig.util')
+        lspconfig.gh_actions_ls.setup({
+            default_config = {
+                cmd = {'gh-actions-language-server', '--stdio'},
+                filetypes = {'yaml.github'},
+                root_dir = util.root_pattern('.github'),
+                single_file_support = true,
+                capabilities = {
+                    workspace = {
+                        didChangeWorkspaceFolders = {
+                            dynamicRegistration = true
+                        }
                     }
                 }
             }

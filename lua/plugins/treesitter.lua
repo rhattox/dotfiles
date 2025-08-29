@@ -13,7 +13,7 @@ return {{
                 "gotmpl",  -- Go template parser
                 "lua",     -- Lua parser
                 "helm",    -- Helm parser
-                "yaml"     -- YAML parser
+                "yaml",     -- YAML parser
                 -- Add more languages as needed, commented out ones are optional
             },
 

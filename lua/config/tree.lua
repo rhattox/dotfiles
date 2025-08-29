@@ -17,6 +17,6 @@ require("nvim-tree").setup({
         group_empty = true -- Group empty folders together
     },
     filters = {
-        dotfiles = true -- Hide dotfiles by default
+        dotfiles = false -- Show dotfiles in the file explorer
     }
 })

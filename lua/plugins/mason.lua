@@ -15,7 +15,8 @@ return {{
             "shfmt", -- Shell script formatter
             "kube-linter", -- Kubernetes linter
             "gh-actions-language-server", -- GitHub Actions language server
-            "prettier" -- Code formatter
+            "prettier", -- Code formatter
+            "lua-language-server" -- Lua language server
             },
             auto_update = true, -- Automatically update tools
             run_on_start = true -- Run installer on startup

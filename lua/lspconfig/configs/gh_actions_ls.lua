@@ -2,8 +2,8 @@ local util = require('lspconfig.util')
 
 return {
     default_config = {
-        cmd = {'gh-actions-language-server', '--stdio'},
-        filetypes = {'yaml.github'},
+        cmd = { 'gh-actions-language-server', '--stdio' },
+        filetypes = { 'yaml.github' },
         root_dir = util.root_pattern('.github'),
         single_file_support = true,
         capabilities = {

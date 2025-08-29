@@ -50,3 +50,6 @@ vim.keymap.set("v", ">", ">gv", {
 vim.keymap.set("n", "<C-b>", ":Ex<CR>", {
     desc = "Open NETrw"
 })
+
+-- Format the current buffer with LSP using <leader>f
+vim.keymap.set("n", "<space>f", "<cmd>lua vim.lsp.buf.format()<CR>", opts)

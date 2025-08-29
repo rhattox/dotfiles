@@ -33,6 +33,17 @@ return {{
                 }
             }
         })
+        lspconfig.lua_ls.setup({
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = {'vim'} -- Recognize 'vim' as a global variable
+                    }
+                }
+            }
+        })
+        -- IDK Why it it's working only with both of this and lua/lspconfig/configs/gh_actions_ls.lua
+        -- But it doesn't work only with lua/lspconfig/configs/gh_actions_ls.lua
         local util = require('lspconfig.util')
         lspconfig.gh_actions_ls.setup({
             default_config = {

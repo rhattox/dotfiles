@@ -19,3 +19,14 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
 
 
 vim.keymap.set("n", "<C-b>", ":Ex<CR>", { desc = "Open NETrw" })
+
+-- removed feature
+-- map("n", "J", "")
+-- map("n", "<C-s>", "<cmd>w<CR>", { desc = "General Save file" })
+-- map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General Copy whole file" })
+-- map("v", "J", ":m '>+1<CR>gv=gv")
+-- map("v", "K", ":m '<-2<CR>gv=gv")
+
+-- map("n", "<leader>fm", function()
+-- 	require("conform").format({ lsp_fallback = true })
+-- end, { desc = "General Format file" })

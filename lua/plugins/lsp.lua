@@ -60,5 +60,6 @@ return {{
                 }
             }
         })
+        lspconfig.terraformls.setup({})
     end
 }}

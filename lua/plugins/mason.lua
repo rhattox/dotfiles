@@ -16,7 +16,8 @@ return {{
             "kube-linter", -- Kubernetes linter
             "gh-actions-language-server", -- GitHub Actions language server
             "prettier", -- Code formatter
-            "lua-language-server" -- Lua language server
+            "lua-language-server", -- Lua language server
+            "terraformls", -- Terraform language server
             },
             auto_update = true, -- Automatically update tools
             run_on_start = true -- Run installer on startup

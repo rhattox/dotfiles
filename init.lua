@@ -18,3 +18,5 @@ require("config.tree")
 
 -- Load Treesitter custom configuration
 require("config.treesitter")
+
+require("config.terraform")

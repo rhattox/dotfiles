@@ -1,9 +1,9 @@
 # dotfiles
 
-
-git clone https://github.com/rhattox/dotfiles ~/.config/nvim && nvim
-mv ~/.config/.tmux.conf ~/.tmux.conf
-
+Clone Repository
+```
+git clone https://github.com/rhattox/dotfiles ~/.config/nvim
+```
 
 # Nvim Version v.0.11.3
 
@@ -38,3 +38,5 @@ asdf set -u fd 10.3.0
 `:messages` -- Show all messages from erros warning etc
 
 Error messages with an E on sign column is opened with `:lua vim.diagnostic.open_float()` command
+=======
+

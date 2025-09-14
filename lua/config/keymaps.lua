@@ -44,13 +44,13 @@ vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>", {
 
 vim.keymap.set("n", "K", "")
 vim.keymap.set("n", "J", "")
-vim.keymap.set("n", "L", "<END>")
-vim.keymap.set("n", "H", "<HOME>")
+vim.keymap.set("n", "L", "<END>") 
+vim.keymap.set("n", "H", "<HOME>") 
 
-vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "General Save file" })
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "General Save file" }) -- Save file
 vim.keymap.set("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General Copy whole file" })
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- Move selected lines down in visual mode with J
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- Move selected lines up in visual mode with K
 
 
 -- Using the new keymap API (Neovim >= 0.7)
@@ -64,5 +64,7 @@ vim.g.mapleader = " "        -- Normal leader
 vim.g.maplocalleader = " "   -- Local leader (optional)
 
 vim.keymap.set("n", "<leader>y", [["+y]])  -- Copy to system clipboard
-vim.keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
-vim.keymap.set("n", "<leader>x", "<cmd>BufferClose<CR>", opts)
+vim.keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>", opts) -- Format code
+vim.keymap.set("n", "<leader>x", "<cmd>BufferClose<CR>", opts) -- Close buffer
+vim.keymap.set('n', '<leader>u', ':UndotreeToggle<CR>', { noremap = true, silent = true }) -- Toggle UndoTree
+vim.keymap.set("x", "<leader>p", [["_dP]])  -- Paste without overwriting the default register

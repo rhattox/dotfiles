@@ -20,3 +20,5 @@ require("config.tree")
 require("config.treesitter")
 
 require("config.terraform")
+
+require('lualine').setup()

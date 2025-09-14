@@ -61,5 +61,6 @@ return {{
             }
         })
         lspconfig.terraformls.setup({})
+        lspconfig.pylsp.setup({})
     end
 }}

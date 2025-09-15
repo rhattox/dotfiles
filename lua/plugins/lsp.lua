@@ -62,5 +62,7 @@ return {{
         })
         lspconfig.terraformls.setup({})
         lspconfig.pylsp.setup({})
+        lspconfig.gopls.setup({})
+        vim.lsp.enable('gopls')
     end
 }}

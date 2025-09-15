@@ -22,3 +22,7 @@ require("config.treesitter")
 require("config.terraform")
 
 require('lualine').setup()
+
+require('java').setup()
+
+require('lspconfig').jdtls.setup({})
